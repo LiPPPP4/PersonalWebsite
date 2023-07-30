@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>白琳的房间</title>
+</head>
+
+<body>
+    <h1>欢迎来到白琳的房间。</h1>
+    <h2>ようこそ、バイリンの部屋へ。</h2>
+    <h4 style="font-weight:normal">这里是哪里？</h4>
+    <h3 style="font-weight:normal">这里是白磷建构的白琳的房间。</h3>
+    <h4 style="font-weight:normal">白琳是谁？</h4>
+    <h3 style="font-weight:normal">我不知道。没人知道。她是我。</h3>
+    <h4 style="font-weight:normal">那是什么？怎么出去？</h4>
+    <h3 style="font-weight:normal">点×就可以。</h3>
+    <h4 style="font-weight:normal">真的吗？</h4>
+    <div style="font-size: 12" id="text">hello,world!</div>
+    <script>
+        var str = '我可以出去了吗，那我走了，那我%￥走■了&#那@*￥：D》硪……#：□■■·*崾￥e……%#g*@；♥础■!□qu■…$譲*&*~-+渥■￥%&■□?■■欪%^$■l■♦□□■..■q□■■.■□■■□■■■■。';
+        var i = 0;
+        function typing() {
+            var divTyping = document.getElementById('text');
+            if (i <= str.length) {
+                divTyping.innerHTML = str.slice(0, i++) + '_';
+                setTimeout('typing()', 200);
+            }
+            else {
+                divTyping.innerHTML = str;
+            }
+        }
+        typing();
+    </script>
+
+</body>
+
+</html>
